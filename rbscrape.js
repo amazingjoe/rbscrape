@@ -7,22 +7,6 @@
     /* Utility Functions  */
     var urllist = ["https://www.redbubble.com/typeahead/?term=cat&locale=en", "https://www.redbubble.com/typeahead/?term=dog&locale=en"];
 
-    function createScript(url, callback) {
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = url;
-        script.async = false;
-        script.onload = callback;
-        document.head.appendChild(script);
-    }
-
-    function createCSS(url) {
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = url;
-        document.head.appendChild(link);
-    }
-
     function main() {
         createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@main/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
@@ -46,5 +30,5 @@
             });
         });
     }
-
+    main();
 })()
