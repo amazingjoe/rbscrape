@@ -6,7 +6,7 @@
         /* Suppress Search Popout */
         document.querySelector('div[class*="styles__completionsList"]').style.display = 'none';
 
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@main/js/rbs_bootstrap.js").then(()=> {
+        
             createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@main/js/rbs_comtools.js").then(()=> {
             createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@main/js/rbs_domtools.js").then(()=> {
                 createCSS("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css");
@@ -26,10 +26,9 @@
 
             });
             });
-        });   
         });
 
-        
+
         createScript("https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js", function() {
             console.log("Lodash script started...");
             console.log("version " + _.VERSION);

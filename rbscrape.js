@@ -23,24 +23,28 @@
         document.head.appendChild(link);
     }
 
+    function main() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@main/js/rbs_bootstrap.js").then(()=> {
+            bootstrap(() => {
+                console.log('done....');
+                createSearchBar(() => {
+                    searchfield.addEventListener("click", function() {
+                        updateInfo(() => {
+                            console.log('completed button press')
+                        });
+                    });
+                    console.log('Search field called!');
+                });
+                createButton(() => {
+                    searchtermbutton.addEventListener("click", function() {
+                        updateInfo(() => {
+                            console.log('completed button press')
+                        });
+                    });
+                    console.log('Create button called!');
+                });
+            });
+        });
+    }
 
-    bootstrap(() => {
-        console.log('done....');
-        createSearchBar(() => {
-            searchfield.addEventListener("click", function() {
-                updateInfo(() => {
-                    console.log('completed button press')
-                });
-            });
-            console.log('Search field called!');
-        });
-        createButton(() => {
-            searchtermbutton.addEventListener("click", function() {
-                updateInfo(() => {
-                    console.log('completed button press')
-                });
-            });
-            console.log('Create button called!');
-        });
-    });
 })()
