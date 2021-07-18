@@ -1,7 +1,7 @@
 (function() {
     /* Glolbal Vars */
     var grid = null;
-    var searchterm = document.querySelector('[name="query"]');
+    
     var searchtermbutton = document.querySelector('button[aria-label="Search term"]');
     var selectors = {};
     /* Utility Functions  */
@@ -24,7 +24,7 @@
     }
 
     function main() {
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.011/js/rbs_bootstrap.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.013/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 createSearchBar(() => {
