@@ -24,7 +24,7 @@
     }
 
     function main() {
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.018/js/rbs_bootstrap.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.019/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 createSearchBar(() => {
