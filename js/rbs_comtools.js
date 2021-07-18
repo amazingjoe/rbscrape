@@ -1,6 +1,8 @@
 async function updateInfo(callback) {
     var griddata = [];
     var searchterm = document.querySelector('[name="query"]');
+    var searchfield = document.querySelector('#searchfield');
+
     if (searchterm != null && searchterm != '') {
         console.log('Running fetch for : ' + `https://www.redbubble.com/typeahead/?term=${searchfield.value}
 &locale=en`);
