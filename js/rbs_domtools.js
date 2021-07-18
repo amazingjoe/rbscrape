@@ -18,6 +18,8 @@ function createSearchBar(callback) {
     var newEl = document.createElement('input');
     newEl.id = "searchfield";
     newEl.type = "text";
+    newEl.classList.add("input");
+    newEl.classList.add("is-large");    
     newEl.placeholder = "Enter Search term";
     var ref = document.querySelector('main');
     insertBefore(newEl, ref);
