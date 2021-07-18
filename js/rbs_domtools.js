@@ -6,7 +6,8 @@ function createButton(callback) {
     var newEl = document.createElement('button');
     newEl.id = "searchbutton";
     newEl.type = "button";
-    newEl.class = "button is-primary";
+    newEl.classList.add("button");
+    newEl.classList.add("is-primary");
     newEl.innerText = "Click Here";
     var ref = document.querySelector('main');
     insertBefore(newEl, ref);
