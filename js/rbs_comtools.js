@@ -24,3 +24,21 @@ async function updateInfo(callback) {
         return callback();
     }
 }
+
+async function getPageData(callback) {
+    var pageObject = {};
+
+    var nodevals = document.querySelectorAll('div[id="SearchResultsGrid"] > a > div > div:nth-of-type(3n) > div > div > span');
+
+    var terms = [];
+    document.getElementById("gridjs").innerHTML = "";
+    nodevals.forEach(element => terms.push([element.innerHTML]));
+    console.log(typeof griddata);
+    console.log(JSON.stringify(terms));
+    grid.updateConfig({
+        search: false,
+        data: terms
+    }).forceRender();
+
+    return callback;
+}

@@ -14,6 +14,18 @@ function createButton(callback) {
     return callback();
 }
 
+function createButton2(callback) {
+    var newEl = document.createElement('button');
+    newEl.id = "fetchproducts";
+    newEl.type = "button";
+    newEl.classList.add("button");
+    newEl.classList.add("is-primary");
+    newEl.innerText = "Fetch DOM Products";
+    var ref = document.querySelector('main');
+    insertBefore(newEl, ref);
+    return callback();
+}
+
 function createSearchBar(callback) {
     var newEl = document.createElement('input');
     newEl.id = "searchfield";

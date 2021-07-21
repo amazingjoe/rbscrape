@@ -4,6 +4,8 @@
     
     var searchtermbutton = document.querySelector('button[aria-label="Search term"]');
     var selectors = {};
+    var pageObject = {};
+
     /* Utility Functions  */
     var urllist = ["https://www.redbubble.com/typeahead/?term=cat&locale=en", "https://www.redbubble.com/typeahead/?term=dog&locale=en"];
 
@@ -27,13 +29,8 @@
         createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.021/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
-                createSearchBar(() => {
-                    searchfield.addEventListener("click", function() {
-                        updateInfo(() => {
-                            console.log('completed button press')
-                        });
-                    });
-                    console.log('Search field called!');
+                createSearchBar(() => {    
+                    console.log('Search field created.');
                 });
                 createButton(() => {
                     searchbutton.addEventListener("click", function() {
@@ -43,6 +40,14 @@
                     });
                     console.log('Create button called!');
                 });
+                createButton2(() => {
+                    fetchproducts.addEventListener("click", function() {
+                        getPageData(() => {
+                            console.log('completed fetch button press')
+                        });
+                    });
+                    console.log('Fetch button called!');
+                });                
             });
         });
     }
