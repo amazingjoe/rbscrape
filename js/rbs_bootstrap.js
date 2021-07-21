@@ -23,15 +23,15 @@ function bootstrap(callback) {
     document.querySelector('div[class*="styles__completionsList"]').style.display = 'none';
 
     
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.023/js/rbs_comtools.js", function() {
-            createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.023/js/rbs_domtools.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.024/js/rbs_comtools.js", function() {
+            createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.024/js/rbs_domtools.js", function() {
                 createCSS("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css");
                 createScript("https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js", function() {
                     console.log("GridJS script started...");
-                    var newE0 = document.createElement('div');
+                    var newEl = document.createElement('div');
                     newEl.id = "rbscrape_nav";
                     var ref = document.querySelector('main');
-                    insertBefore(newE0, ref);                    
+                    insertBefore(newEl, ref);                    
                     var newEl = document.createElement('div');
                     newEl.id = "gridjs";
                     var ref = document.querySelector('main');
