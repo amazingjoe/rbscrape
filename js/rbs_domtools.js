@@ -9,7 +9,7 @@ function createButton(callback) {
     newEl.classList.add("button");
     newEl.classList.add("is-primary");
     newEl.innerText = "Click Here";
-    var ref = document.querySelector('rbscrape_nav');
+    var ref = document.querySelector('div[id="rbscrape_nav"]');
     insertBefore(newEl, ref);
     return callback();
 }
@@ -21,7 +21,7 @@ function createButton2(callback) {
     newEl.classList.add("button");
     newEl.classList.add("is-primary");
     newEl.innerText = "Fetch DOM Products";
-    var ref = document.querySelector('rbscrape_nav');
+    var ref = document.querySelector('div[id="rbscrape_nav"]');
     insertBefore(newEl, ref);
     return callback();
 }
@@ -33,7 +33,7 @@ function createSearchBar(callback) {
     newEl.classList.add("input");
     newEl.classList.add("is-large");    
     newEl.placeholder = "Enter Search term";
-    var ref = document.querySelector('rbscrape_nav');
+    var ref = document.querySelector('div[id="rbscrape_nav"]');
     insertBefore(newEl, ref);
     return callback();
 }
