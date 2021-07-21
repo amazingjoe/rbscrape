@@ -16,7 +16,7 @@ function createButton(callback) {
     newEl.type = "button";
     newEl.classList.add("button");
     newEl.classList.add("is-primary");
-    newEl.innerText = "Click Here";
+    newEl.innerText = "Term Search";
     var ref = document.querySelector('header > div > div');
     insertBefore(newEl, ref);
     return callback();

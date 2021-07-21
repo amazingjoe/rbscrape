@@ -36,7 +36,7 @@
         var ref = document.querySelector('header > div > div');
         insertBefore(newEl, ref);*/
 
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.034/js/rbs_bootstrap.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.035/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 removeJunk(() => {    
