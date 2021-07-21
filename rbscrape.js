@@ -36,7 +36,7 @@
                     console.log('Search field called!');
                 });
                 createButton(() => {
-                    searchtermbutton.addEventListener("click", function() {
+                    searchbutton.addEventListener("click", function() {
                         updateInfo(() => {
                             console.log('completed button press')
                         });
