@@ -1,6 +1,6 @@
 function insertBefore(el, referenceNode) {
     referenceNode.parentNode.insertBefore(el, referenceNode);
-}
+}  
 
 function createButton(callback) {
     var newEl = document.createElement('button');
@@ -37,3 +37,9 @@ function createSearchBar(callback) {
     insertBefore(newEl, ref);
     return callback();
 }
+
+// Setup Anchor
+var newEl = document.createElement('div');
+newEl.id = "rbscrape_nav";
+var ref = document.querySelector('main');
+insertBefore(newEl, ref);
