@@ -30,13 +30,13 @@
     }    
 
     function main() {
-        /* Setup Anchor */
+        /* Setup Anchor 
         var newEl = document.createElement('div');
         newEl.id = "rbscrape_nav";
-        var ref = document.querySelector('main');
-        insertBefore(newEl, ref);
+        var ref = document.querySelector('header > div > div');
+        insertBefore(newEl, ref);*/
 
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.032/js/rbs_bootstrap.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.033/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 createSearchBar(() => {    

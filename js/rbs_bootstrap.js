@@ -27,9 +27,9 @@ function bootstrap(callback) {
     document.querySelector('div[class*="styles__completionsList"]').style.display = 'none';
 
     
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.032/js/rbs_comtools.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.033/js/rbs_comtools.js", function() {
 
-            createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.032/js/rbs_domtools.js", function() {
+            createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.033/js/rbs_domtools.js", function() {
                   
 
                 createCSS("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css");
