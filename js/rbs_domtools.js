@@ -2,6 +2,14 @@ function insertBefore(el, referenceNode) {
     referenceNode.parentNode.insertBefore(el, referenceNode);
 }  
 
+function removeJunk(callback) {
+    var oldsearchbar = document.querySelector('header > div > div');
+    oldsearchbar.innerHTML = '';
+
+    var oldnavlinks = document.querySelectorAll('header > div > a');
+    for (var i=0; i< oldnavlinks.length; i++) {oldnavlinks[i].outerHTML = "";}
+}
+
 function createButton(callback) {
     var newEl = document.createElement('button');
     newEl.id = "searchbutton";
