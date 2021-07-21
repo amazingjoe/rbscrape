@@ -26,7 +26,13 @@
     }
 
     function main() {
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.027/js/rbs_bootstrap.js", function() {
+        // Setup Anchor
+        var newEl = document.createElement('div');
+        newEl.id = "rbscrape_nav";
+        var ref = document.querySelector('main');
+        insertBefore(newEl, ref);
+
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.028/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 createSearchBar(() => {    
