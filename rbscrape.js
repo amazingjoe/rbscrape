@@ -36,7 +36,7 @@
         var ref = document.querySelector('main');
         insertBefore(newEl, ref);
 
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.030/js/rbs_bootstrap.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.031/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 createSearchBar(() => {    

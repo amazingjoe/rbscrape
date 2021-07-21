@@ -1,3 +1,7 @@
+function insertBefore(el, referenceNode) {
+    referenceNode.parentNode.insertBefore(el, referenceNode);
+}  
+
 function createButton(callback) {
     var newEl = document.createElement('button');
     newEl.id = "searchbutton";
