@@ -31,11 +31,15 @@ async function getPageData(callback) {
 
     var terms = [];
     document.getElementById("gridjs").innerHTML = "";
-    nodevals.forEach(element => terms.push([element.innerHTML]));
+    var counter=0;
+    nodevals.forEach(element => {        
+        terms.push([counter,element.innerHTML]);
+        counter++;
+    });
     console.log(typeof griddata);
     console.log(JSON.stringify(terms));
     grid.updateConfig({
-        columns: ["Key","Term"],
+        columns: ["Listing #","Title"],
         search: false,
         data: terms
     }).forceRender();
