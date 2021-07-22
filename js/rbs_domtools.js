@@ -3,7 +3,7 @@ function insertBefore(el, referenceNode) {
 }  
 
 function insertAfter(el, referenceNode) {
-    referenceNode.parentNode.insertAfter(el, referenceNode);
+    referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
 }  
 
 function removeJunk(callback) {
