@@ -21,10 +21,11 @@ function insertTabs(callback) {
 
     var htmltemplate = `<div class="tabs">
         <ul>
-        <li class="is-active"><a>Pictures</a></li>
-        <li><a>Music</a></li>
-        <li><a>Videos</a></li>
-        <li><a>Documents</a></li>
+        <li class="is-active"><a>Products</a></li>
+        <li><a>Tags</a></li>
+        <li><a>Suggestions</a></li>
+        <li><a>Popular</a></li>
+        <li><a>Trending</a></li>
         </ul>
     </div>`;
  
