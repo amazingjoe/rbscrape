@@ -30,13 +30,7 @@
     }    
 
     function main() {
-        /* Setup Anchor 
-        var newEl = document.createElement('div');
-        newEl.id = "rbscrape_nav";
-        var ref = document.querySelector('header > div > div');
-        insertBefore(newEl, ref);*/
-
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.039/js/rbs_bootstrap.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.040/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 removeJunk(() => {    
@@ -61,7 +55,9 @@
                     });
                     console.log('Fetch button called!');
                 });
-                
+                insertTabs(()=> {
+                    console.log('Inserting tabs');
+                });
             });
         });
     }

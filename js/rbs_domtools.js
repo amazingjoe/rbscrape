@@ -31,7 +31,7 @@ function insertTabs(callback) {
     var newEl = document.createElement('div');
     newEl.id = "rbscrape_tabs";
     newEl.innerHTML = htmltemplate;
-    var ref = document.querySelector('div["class*=headerWrapper"]');
+    var ref = document.querySelector('div[class*="headerWrapper"]');
     insertAfter(newEl, ref);
 
 }
