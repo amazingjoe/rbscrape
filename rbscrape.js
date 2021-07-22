@@ -36,7 +36,7 @@
         var ref = document.querySelector('header > div > div');
         insertBefore(newEl, ref);*/
 
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.038/js/rbs_bootstrap.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.039/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 removeJunk(() => {    
@@ -55,7 +55,7 @@
                 });
                 createButton2(() => {
                     fetchproducts.addEventListener("click", function() {
-                        getPageData(() => {
+                        getPageTitles(() => {
                             console.log('completed fetch button press')
                         });
                     });

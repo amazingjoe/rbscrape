@@ -24,7 +24,7 @@ async function updateInfo(callback) {
     }
 }
 
-async function getPageData(callback) {
+async function getPageTitles(callback) {
     var pageObject = {};
 
     var nodevals = document.querySelectorAll(superobj.get('product_titles'));
