@@ -35,6 +35,7 @@ async function getPageData(callback) {
     console.log(typeof griddata);
     console.log(JSON.stringify(terms));
     grid.updateConfig({
+        columns: ["Key","Term"],
         search: false,
         data: terms
     }).forceRender();
