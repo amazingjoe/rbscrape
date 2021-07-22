@@ -27,7 +27,7 @@ async function updateInfo(callback) {
 async function getPageData(callback) {
     var pageObject = {};
 
-    var nodevals = document.querySelectorAll('div[id="SearchResultsGrid"] > a > div > div:nth-of-type(3n) > div > div > span');
+    var nodevals = document.querySelectorAll(superobj.get('product_titles'));
 
     var terms = [];
     document.getElementById("gridjs").innerHTML = "";
