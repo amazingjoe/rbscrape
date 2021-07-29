@@ -39,7 +39,7 @@ function bootstrap(callback) {
 
                         var newEl = document.createElement('div');
                         newEl.id = "gridjs";
-                        var ref = document.querySelector('tabs');
+                        var ref = document.querySelector('tags');
                         insertInside(newEl, ref);
                         ref.style.display = "none";
                         createCSS("https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css");
