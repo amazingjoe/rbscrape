@@ -27,6 +27,21 @@ function insertTabs(callback) {
         <li><a>Popular</a></li>
         <li><a>Trending</a></li>
         </ul>
+    </div>
+    <div id="Products">
+        <h1>Products</h1>
+    </div>
+    <div id="Tags">
+        <h1>Tags</h1>
+    </div>
+    <div id="Suggestions">
+        <h1>Suggestions</h1>
+    </div>
+    <div id="Popular">
+        <h1>Popular</h1>
+    </div>
+    <div id="Trending">
+        <h1>Trending</h1>
     </div>`;
  
     var newEl = document.createElement('div');
