@@ -7,7 +7,7 @@ function insertAfter(el, referenceNode) {
 }
 
 function insertInside(el, referenceNode) {
-    referenceNode.innerHTML.insertInside(el,referenceNode);
+    referenceNode.insertInside(el,referenceNode);
 }  
 
 function removeJunk(callback) {
