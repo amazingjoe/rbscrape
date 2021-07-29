@@ -19,6 +19,7 @@ function removeJunk(callback) {
 
     var oldnavicons = document.querySelector('header > div:nth-of-type(3n)');
     oldnavicons.outerHTML = "";
+    return callback();
 }
 
 function insertTabs(callback) {
@@ -53,6 +54,7 @@ function insertTabs(callback) {
     newEl.innerHTML = htmltemplate;
     var ref = document.querySelector('div[class*="headerWrapper"]');
     insertAfter(newEl, ref);
+    return callback();
 
 }
 
