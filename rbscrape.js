@@ -63,7 +63,7 @@
 
                         var newEl = document.createElement('div');
                         newEl.id = "gridjs";
-                        var ref = document.querySelector('tags');
+                        var ref = document.querySelector('Tags');
                         insertInside(newEl, ref);
                         ref.style.display = "none";
                         createCSS("https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css");
