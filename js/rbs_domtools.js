@@ -24,10 +24,11 @@ function removeJunk(callback) {
 
 function insertTabs(callback) {
 
-    var htmltemplate = `<div class="tabs">
+    var htmltemplate = `<style>.tabcontent {display: none;} #Tags{display:block;}</style>
+    <div class="tabs">
         <ul>
-        <li class="tablinks is-active" onclick="openTab(event, 'Products')"><a>Products</a></li>
-        <li class="tablinks" onclick="openTab(event, 'Tags')"><a>Tags</a></li>
+        <li class="tablinks" onclick="openTab(event, 'Products')"><a>Products</a></li>
+        <li class="tablinks is-active" onclick="openTab(event, 'Tags')"><a>Tags</a></li>
         <li class="tablinks" onclick="openTab(event, 'Suggestions')"><a>Suggestions</a></li>
         <li class="tablinks" onclick="openTab(event, 'Popular')"><a>Popular</a></li>
         <li class="tablinks" onclick="openTab(event, 'Trending')"><a>Trending</a></li>
