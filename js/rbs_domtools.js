@@ -21,26 +21,26 @@ function insertTabs(callback) {
 
     var htmltemplate = `<div class="tabs">
         <ul>
-        <li class="is-active"><a>Products</a></li>
-        <li><a>Tags</a></li>
-        <li><a>Suggestions</a></li>
-        <li><a>Popular</a></li>
-        <li><a>Trending</a></li>
+        <li class="tablinks is-active" onclick="openTab(event, 'Products')"><a>Products</a></li>
+        <li class="tablinks" onclick="openTab(event, 'Tags')"><a>Tags</a></li>
+        <li class="tablinks" onclick="openTab(event, 'Suggestions')"><a>Suggestions</a></li>
+        <li class="tablinks" onclick="openTab(event, 'Popular')"><a>Popular</a></li>
+        <li class="tablinks" onclick="openTab(event, 'Trending')"><a>Trending</a></li>
         </ul>
     </div>
-    <div id="Products">
+    <div id="Products" class="tabcontent">
         <h1>Products</h1>
     </div>
-    <div id="Tags">
+    <div id="Tags" class="tabcontent">
         <h1>Tags</h1>
     </div>
-    <div id="Suggestions">
+    <div id="Suggestions" class="tabcontent">
         <h1>Suggestions</h1>
     </div>
-    <div id="Popular">
+    <div id="Popular" class="tabcontent">
         <h1>Popular</h1>
     </div>
-    <div id="Trending">
+    <div id="Trending" class="tabcontent">
         <h1>Trending</h1>
     </div>`;
  
