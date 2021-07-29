@@ -4,6 +4,10 @@ function insertBefore(el, referenceNode) {
 
 function insertAfter(el, referenceNode) {
     referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
+}
+
+function insertInside(el, referenceNode) {
+    referenceNode.innerHTML = el;
 }  
 
 function removeJunk(callback) {

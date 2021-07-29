@@ -26,11 +26,11 @@ function bootstrap(callback) {
     /* Suppress Search Popout */
     document.querySelector('div[class*="styles__completionsList"]').style.display = 'none';
 
-    createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.046/js/rbs_selectors.js", function() {
+    createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.047/js/rbs_selectors.js", function() {
 
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.046/js/rbs_comtools.js", function() {
-            createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.046/js/rbs_tabs.js", function() {
-                createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.046/js/rbs_domtools.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.047/js/rbs_comtools.js", function() {
+            createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.047/js/rbs_tabs.js", function() {
+                createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.047/js/rbs_domtools.js", function() {
                     
 
                     createCSS("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css");
@@ -39,8 +39,8 @@ function bootstrap(callback) {
 
                         var newEl = document.createElement('div');
                         newEl.id = "gridjs";
-                        var ref = document.querySelector('main');
-                        insertBefore(newEl, ref);
+                        var ref = document.querySelector('tabs');
+                        insertInside(newEl, ref);
                         ref.style.display = "none";
                         createCSS("https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css");
                         grid = new gridjs.Grid({
