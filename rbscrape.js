@@ -30,7 +30,7 @@
     }    
 
     function main() {
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.049/js/rbs_bootstrap.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.050/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 removeJunk(() => {    
@@ -54,9 +54,6 @@
                         });
                     });
                     console.log('Fetch button called!');
-                });
-                insertTabs(()=> {
-                    console.log('Inserting tabs');
                 });
             });
         });

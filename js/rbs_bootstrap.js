@@ -26,12 +26,14 @@ function bootstrap(callback) {
     /* Suppress Search Popout */
     document.querySelector('div[class*="styles__completionsList"]').style.display = 'none';
 
-    createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.049/js/rbs_selectors.js", function() {
+    createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.050/js/rbs_selectors.js", function() {
 
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.049/js/rbs_comtools.js", function() {
-            createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.049/js/rbs_tabs.js", function() {
-                createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.049/js/rbs_domtools.js", function() {
-                    
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.050/js/rbs_comtools.js", function() {
+            createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.050/js/rbs_tabs.js", function() {
+                createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.050/js/rbs_domtools.js", function() {
+                    insertTabs(()=> {
+                        console.log('Inserting tabs');
+                    });    
 
                     createCSS("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css");
                     createScript("https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js", function() {
