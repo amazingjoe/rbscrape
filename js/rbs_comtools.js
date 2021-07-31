@@ -12,14 +12,11 @@ async function updateInfo(callback) {
             griddata.forEach(element => terms.push([element]));
             console.log(typeof griddata);
             console.log(JSON.stringify(terms));
-            /*grid.updateConfig({
+            grid.updateConfig({
+                columns: ["Terms"],
                 search: false,
                 data: terms
-            }).forceRender();*/
-            grid = new gridjs.Grid({
-                columns: ["Name"],
-                data: ["test"]
-            }).render(document.getElementById("gridjs"));
+            }).forceRender();
         }).then(finsihed => {
             return callback();
         });
