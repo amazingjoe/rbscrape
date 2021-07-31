@@ -17,7 +17,7 @@ async function updateInfo(callback) {
                 search: false,
                 data: terms
             }).forceRender();
-        }).then(finsihed => {
+        
             return callback();
         });
     } else {
