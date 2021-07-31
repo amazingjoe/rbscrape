@@ -15,13 +15,13 @@ async function updateInfo(callback) {
 
             if (typeof grid === 'undefined') {
                 grid = new gridjs.Grid({
-                    columns: ["Name"],
+                    columns: ["Search"],
                     data: []
                 }).render(document.getElementById("gridjs"));                
             }
 
             grid.updateConfig({
-                columns: ["terms"],
+                columns: ["Term"],
                 search: false,
                 data: terms
             }).forceRender();
@@ -47,6 +47,13 @@ async function getPageTitles(callback) {
     });
     console.log(typeof griddata);
     console.log(JSON.stringify(terms));
+
+    if (typeof grid === 'undefined') {
+        grid = new gridjs.Grid({
+            columns: ["Search"],
+            data: []
+        }).render(document.getElementById("gridjs"));                
+    }    
     grid.updateConfig({
         columns: ["Listing #","Title"],
         search: false,

@@ -19,6 +19,13 @@ function removeJunk(callback) {
 
     var oldnavicons = document.querySelector('header > div:nth-of-type(3n)');
     oldnavicons.outerHTML = "";
+
+    var maincontent = document.querySelector('main');
+    maincontent.style.display = "none";
+
+    var footercontent = document.querySelector('footer');
+    footercontent.style.display = "none";
+
     return callback();
 }
 
