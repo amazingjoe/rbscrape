@@ -1,4 +1,4 @@
-async function updateInfo(callback) {
+async function updateInfo(grid,callback) {
     var griddata = [];
     var searchfield = document.querySelector('#searchfield');
 

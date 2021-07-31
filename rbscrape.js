@@ -30,31 +30,12 @@
     }    
 
     function main() {
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.059/js/rbs_bootstrap.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.060/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 removeJunk(() => {    
                     console.log('Removing Junk.');
                 });                
-                createSearchBar(() => {    
-                    console.log('Search field created.');
-                });
-                createButton(() => {
-                    searchbutton.addEventListener("click", function() {
-                        updateInfo(() => {
-                            console.log('completed button press')
-                        });
-                    });
-                    console.log('Create button called!');
-                });
-                createButton2(() => {
-                    fetchproducts.addEventListener("click", function() {
-                        getPageTitles(() => {
-                            console.log('completed fetch button press')
-                        });
-                    });
-                    console.log('Fetch button called!');
-                });
                 insertTabs(()=> {
                     console.log('Inserting tabs');
                     createCSS("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css");
@@ -73,7 +54,26 @@
                         }).render(document.getElementById("gridjs"));
                     });
 
-                });                
+                });
+                createSearchBar(() => {    
+                    console.log('Search field created.');
+                });
+                createButton(() => {
+                    searchbutton.addEventListener("click", function() {
+                        updateInfo((grid) => {
+                            console.log('completed button press')
+                        });
+                    });
+                    console.log('Create button called!');
+                });
+                createButton2(() => {
+                    fetchproducts.addEventListener("click", function() {
+                        getPageTitles(() => {
+                            console.log('completed fetch button press')
+                        });
+                    });
+                    console.log('Fetch button called!');
+                });                                
             });
         });
     }
