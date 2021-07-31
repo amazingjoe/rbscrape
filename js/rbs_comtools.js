@@ -18,7 +18,7 @@ async function updateInfo(callback) {
             }).forceRender();*/
             grid = new gridjs.Grid({
                 columns: ["Name"],
-                data: terms
+                data: ["test"]
             }).render(document.getElementById("gridjs"));
         }).then(finsihed => {
             return callback();

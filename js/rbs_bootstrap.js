@@ -28,7 +28,7 @@ function bootstrap(callback) {
 
     createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.062/js/rbs_selectors.js", function() {
 
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.062/js/rbs_comtools.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.063/js/rbs_comtools.js", function() {
             createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.062/js/rbs_tabs.js", function() {
                 createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.062/js/rbs_domtools.js", function() {
                     return callback();
