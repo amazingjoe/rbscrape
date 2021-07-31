@@ -29,6 +29,12 @@ function removeJunk(callback) {
     return callback();
 }
 
+function inittabs() {
+    // Show the current tab and add is-active class to that tab
+    document.getElementById("Tags").style.display = 'block';
+    document.getElementById("Tags").className+= " is-active"; 
+}
+
 function insertTabs(callback) {
 
     var htmltemplate = `<style>.tabcontent {display: none;} #Tags{display:block;}</style>
