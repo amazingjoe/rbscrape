@@ -1,10 +1,3 @@
-
-function inittabs() {
-    // Show the current tab and add is-active class to that tab
-    document.getElementById("Tags").style.display = 'block';
-    event.currentTarget.className+= " is-active"; 
-}
-
 function openTab(event, tabId) {
 
     // Get all elements with class tabcontent and hide
