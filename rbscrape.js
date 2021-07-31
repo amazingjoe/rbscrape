@@ -30,7 +30,7 @@
     }    
 
     function main() {
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.068/js/rbs_bootstrap.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.069/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 removeJunk(() => {    
