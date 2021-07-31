@@ -30,7 +30,7 @@
     }    
 
     function main() {
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.060/js/rbs_bootstrap.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.061/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 removeJunk(() => {    
@@ -60,7 +60,7 @@
                 });
                 createButton(() => {
                     searchbutton.addEventListener("click", function() {
-                        updateInfo((grid) => {
+                        updateInfo(() => {
                             console.log('completed button press')
                         });
                     });
