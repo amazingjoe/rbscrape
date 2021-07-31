@@ -8,7 +8,7 @@ async function updateInfo(callback) {
         .then(res => res.json()).then(data => data.completions).then(griddata => {
             console.log(griddata);
             var terms = [];
-            document.getElementById("gridjs").innerHTML = "";
+            //document.getElementById("gridjs").innerHTML = "";
             griddata.forEach(element => terms.push([element]));
             console.log(typeof griddata);
             console.log(JSON.stringify(terms));
