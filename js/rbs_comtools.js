@@ -12,12 +12,20 @@ async function updateInfo(callback) {
             griddata.forEach(element => terms.push([element]));
             console.log(typeof griddata);
             console.log(JSON.stringify(terms));
+
+            if (!grid) {
+                grid = new gridjs.Grid({
+                    columns: ["Name"],
+                    data: []
+                }).render(document.getElementById("gridjs"));                
+            }
+
             grid.updateConfig({
-                columns: ["Terms"],
+                columns: ["terms"],
                 search: false,
                 data: terms
             }).forceRender();
-        
+        }).then(finsihed => {
             return callback();
         });
     } else {
