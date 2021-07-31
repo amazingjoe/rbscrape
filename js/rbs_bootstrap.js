@@ -26,11 +26,11 @@ function bootstrap(callback) {
     /* Suppress Search Popout */
     document.querySelector('div[class*="styles__completionsList"]').style.display = 'none';
 
-    createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.071/js/rbs_selectors.js", function() {
+    createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.072/js/rbs_selectors.js", function() {
 
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.071/js/rbs_comtools.js", function() {
-            createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.071/js/rbs_tabs.js", function() {
-                createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.071/js/rbs_domtools.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.072/js/rbs_comtools.js", function() {
+            createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.072/js/rbs_tabs.js", function() {
+                createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.072/js/rbs_domtools.js", function() {
                     return callback();
                 });
             });
