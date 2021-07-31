@@ -8,14 +8,18 @@ async function updateInfo(callback) {
         .then(res => res.json()).then(data => data.completions).then(griddata => {
             console.log(griddata);
             var terms = [];
-            //document.getElementById("gridjs").innerHTML = "";
+            document.getElementById("gridjs").innerHTML = "";
             griddata.forEach(element => terms.push([element]));
             console.log(typeof griddata);
             console.log(JSON.stringify(terms));
-            grid.updateConfig({
+            /*grid.updateConfig({
                 search: false,
                 data: terms
-            }).forceRender();
+            }).forceRender();*/
+            grid = new gridjs.Grid({
+                columns: ["Name"],
+                data: terms
+            }).render(document.getElementById("gridjs"));
         }).then(finsihed => {
             return callback();
         });

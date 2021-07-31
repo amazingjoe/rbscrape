@@ -30,30 +30,11 @@
     }    
 
     function main() {
-        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.061/js/rbs_bootstrap.js", function() {
+        createScript("https://cdn.jsdelivr.net/gh/amazingjoe/rbscrape@0.062/js/rbs_bootstrap.js", function() {
             bootstrap(() => {
                 console.log('done....');
                 removeJunk(() => {    
                     console.log('Removing Junk.');
-                });                
-                insertTabs(()=> {
-                    console.log('Inserting tabs');
-                    createCSS("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css");
-                    createScript("https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js", function() {
-                        console.log("GridJS script started...");
-
-                        var newEl = document.createElement('div');
-                        newEl.id = "gridjs";
-                        var ref = document.querySelector('#Tags');
-                        insertInside(newEl, ref);
-                        ref.style.display = "none";
-                        createCSS("https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css");
-                        grid = new gridjs.Grid({
-                            columns: ["Name"],
-                            data: []
-                        }).render(document.getElementById("gridjs"));
-                    });
-
                 });
                 createSearchBar(() => {    
                     console.log('Search field created.');
@@ -73,7 +54,27 @@
                         });
                     });
                     console.log('Fetch button called!');
-                });                                
+                });                                  
+                insertTabs(()=> {
+                    console.log('Inserting tabs');
+                    createCSS("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css");
+                    createScript("https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js", function() {
+                        console.log("GridJS script started...");
+
+                        var newEl = document.createElement('div');
+                        newEl.id = "gridjs";
+                        var ref = document.querySelector('#Tags');
+                        insertInside(newEl, ref);
+                        ref.style.display = "none";
+                        createCSS("https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css");
+                        grid = new gridjs.Grid({
+                            columns: ["Name"],
+                            data: []
+                        }).render(document.getElementById("gridjs"));
+                    });
+
+                });
+                              
             });
         });
     }
