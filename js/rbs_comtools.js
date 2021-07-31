@@ -13,7 +13,7 @@ async function updateInfo(callback) {
             console.log(typeof griddata);
             console.log(JSON.stringify(terms));
 
-            if (!grid) {
+            if (typeof grid == undefined) {
                 grid = new gridjs.Grid({
                     columns: ["Name"],
                     data: []
