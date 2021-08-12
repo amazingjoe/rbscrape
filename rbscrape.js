@@ -72,8 +72,8 @@
                             data: []
                         }).render(document.getElementById("gridjs"));
                     });
-                    inittabs();
-                });
+                    
+                }).then(res => {inittabs();});
                               
             });
         });
